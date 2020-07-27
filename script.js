@@ -56,7 +56,7 @@ window.addEventListener("load", function()
  
      if (inputPilotName.value.trim() === "" || inputPilotName.value.trim() === "" || inputFuelLevel.value.trim() === "" || inputCargoMass.value.trim() === "") 
      {
-        alert("All fields are required!");
+        alert("All fields are required.");
         event.preventDefault();
         fieldCheck = false;
         document.getElementById("faultyItems").style.visibility = "hidden";
@@ -107,7 +107,7 @@ window.addEventListener("load", function()
         document.getElementById("faultyItems").style.visibility = "visible";
         document.getElementById("fuelStatus").innerText = `Fuel level insufficient. At least 10,000L necessary to launch.`
         document.getElementById('launchStatus').innerText = 'Shuttle not ready for launch!';
-        document.getElementById('launchStatus').style.color= "red";
+        document.getElementById('launchStatus').style.color = "red";
         fuelReady = false;
         event.preventDefault();
      } else 
@@ -119,7 +119,7 @@ window.addEventListener("load", function()
         document.getElementById("faultyItems").style.visibility = "visible";
         document.getElementById("cargoStatus").innerText = `Excessive cargo mass.`
         document.getElementById('launchStatus').innerText = 'Shuttle not ready for launch!';
-        document.getElementById('launchStatus').style.color= "red";
+        document.getElementById('launchStatus').style.color = "red";
         cargoReady = false;
         event.preventDefault();
      } else 
@@ -131,9 +131,7 @@ window.addEventListener("load", function()
         document.getElementById("faultyItems").style.visibility = "visible";
         document.getElementById('launchStatus').innerText = 'Shuttle is ready for launch.';
         document.getElementById('launchStatus').style.color= "green";
-        event.preventDefault()
+        event.preventDefault();
      }
   });
 });
-
-
